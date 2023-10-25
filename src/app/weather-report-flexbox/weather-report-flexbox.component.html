@@ -1,0 +1,86 @@
+<div class="weather-container">
+    <div class="weather-details">
+        <div class="currentTemperature">
+            <table style="width:100%;text-align:center;">
+                <div class="forecast-day">
+                    Velika, Požeško-slavonska, Hrvatska
+                </div>
+                <div class="forecast-day">
+                    <p>Trenutno vrijeme</p>
+                    <div id="date">{{ currentTime | date:'fullDate' }}</div>
+                    <div id="time">{{ currentTime | date:'hh:mm:ss' }}</div>
+                    <table style="vertical-align: middle;">
+                        <td>
+                            <img src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/flights/taskbar_v10sw2/Condition_Card/MostlySunnyDay.svg" alt="ikona">
+                        </td>
+                        <td>
+                            <h3 style="text-align: left;">11°C</h3>
+                        </td>
+                    </table>
+                    <p>Djelomično oblačno</p>
+                </div>
+              </table>
+        </div>
+    </div>
+    <div class="forecast">
+        <h2 style="font-family: Helvetica;">Prognoza sljedećih 7 dana</h2>
+        <div class="forecast-days">
+            <div class="forecast-day">
+                <h4 style="font-family: Helvetica;">Sutra</h4>
+                <div class="nextTemperature">
+                    <img src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/flights/taskbar_v10sw2/Condition_Card/MostlyCloudyDayV2.svg" alt="ikona" class="center">
+                </div>
+                <p style="font-family: Helvetica;">Najviša: <span id="high-temp-tomorrow">15°C</span></p>
+                <p style="font-family: Helvetica;">Najniža: <span id="low-temp-tomorrow">5°C</span></p>
+            </div>
+            <div class="forecast-day">
+                <h4 style="font-family: Helvetica;">Utorak</h4>
+                <div class="nextTemperature">
+                    <img src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/flights/taskbar_v10sw2/Condition_Card/MostlyCloudyDayV2.svg" alt="ikona" class="center">
+                </div>
+                <p style="font-family: Helvetica;">Najviša: <span id="high-temp-tomorrow">13°C</span></p>
+                <p style="font-family: Helvetica;">Najniža: <span id="low-temp-tomorrow">3°C</span></p>
+            </div>
+            <div class="forecast-day">
+                <h4 style="font-family: Helvetica;">Srijeda</h4>
+                <div class="nextTemperature">
+                    <img src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/flights/taskbar_v10sw2/Condition_Card/MostlyCloudyDayV2.svg" alt="ikona" class="center">
+                </div>
+                <p style="font-family: Helvetica;">Najviša: <span id="high-temp-tomorrow">14°C</span></p>
+                <p style="font-family: Helvetica;">Najniža: <span id="low-temp-tomorrow">4°C</span></p>
+            </div>
+            <div class="forecast-day">
+                <h4 style="font-family: Helvetica;">Četvrtak</h4>
+                <div class="nextTemperature">
+                    <img src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/flights/taskbar_v10sw2/Condition_Card/MostlySunnyDay.svg" alt="ikona" class="center">
+                </div>
+                <p style="font-family: Helvetica;">Najviša: <span id="high-temp-tomorrow">19°C</span></p>
+                <p style="font-family: Helvetica;">Najniža: <span id="low-temp-tomorrow">6°C</span></p>
+            </div>
+            <div class="forecast-day">
+                <h4 style="font-family: Helvetica;">Petak</h4>
+                <div class="nextTemperature">
+                    <img src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/flights/taskbar_v10sw2/Condition_Card/MostlySunnyDay.svg" alt="ikona" class="center">
+                </div>
+                <p style="font-family: Helvetica;">Najviša: <span id="high-temp-tomorrow">16°C</span></p>
+                <p style="font-family: Helvetica;">Najniža: <span id="low-temp-tomorrow">4°C</span></p>
+            </div>
+            <div class="forecast-day">
+                <h4 style="font-family: Helvetica;">Subota</h4>
+                <div class="nextTemperature">
+                    <img src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/flights/taskbar_v10sw2/Condition_Card/MostlyCloudyDayV2.svg" alt="ikona" class="center">
+                </div>
+                <p style="font-family: Helvetica;">Najviša: <span id="high-temp-tomorrow">20°C</span></p>
+                <p style="font-family: Helvetica;">Najniža: <span id="low-temp-tomorrow">6°C</span></p>
+            </div>
+            <div class="forecast-day">
+                <h4 style="font-family: Helvetica;">Nedjelja</h4>
+                <div class="nextTemperature">
+                    <img src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/flights/taskbar_v10sw2/Condition_Card/MostlyCloudyDayV2.svg" alt="ikona" class="center">
+                </div>
+                <p style="font-family: Helvetica;">Najviša: <span id="high-temp-tomorrow">19°C</span></p>
+                <p style="font-family: Helvetica;">Najniža: <span id="low-temp-tomorrow">8°C</span></p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": ["hr"],
             "outputPath": "dist/tutsplus",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -100,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e03be64b-2b78-45a7-afbc-eeeaa17cf534"
   }
 }
